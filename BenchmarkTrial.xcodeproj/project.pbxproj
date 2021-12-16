@@ -15,6 +15,9 @@
 		1A068AEC276BFECC007C1E17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A068AD9276BFECC007C1E17 /* Assets.xcassets */; };
 		1A068AF9276C0316007C1E17 /* SampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A068AF8276C0316007C1E17 /* SampleModel.swift */; };
 		1A068AFA276C0316007C1E17 /* SampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A068AF8276C0316007C1E17 /* SampleModel.swift */; };
+		1AD18818276C05560085CDA5 /* MyLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 1AD18817276C05560085CDA5 /* MyLibrary */; };
+		1AD1881A276C055E0085CDA5 /* MyLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 1AD18819276C055E0085CDA5 /* MyLibrary */; };
+		1AD1881D276C089E0085CDA5 /* CollectionsBenchmark in Frameworks */ = {isa = PBXBuildFile; productRef = 1AD1881C276C089E0085CDA5 /* CollectionsBenchmark */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +29,6 @@
 		1A068AE6276BFECC007C1E17 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		1A068AF5276BFF4A007C1E17 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1A068AF8276C0316007C1E17 /* SampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleModel.swift; sourceTree = "<group>"; };
-		1AD18815276C046F0085CDA5 /* MyLibrary */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = MyLibrary; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AD1881D276C089E0085CDA5 /* CollectionsBenchmark in Frameworks */,
+				1AD18818276C05560085CDA5 /* MyLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AD1881A276C055E0085CDA5 /* MyLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,11 +55,11 @@
 		1A068AD1276BFECC007C1E17 = {
 			isa = PBXGroup;
 			children = (
-				1A068AF6276C00A7007C1E17 /* Packages */,
 				1A068AF5276BFF4A007C1E17 /* README.md */,
 				1A068AD6276BFECC007C1E17 /* Shared */,
 				1A068AE5276BFECC007C1E17 /* macOS */,
 				1A068ADF276BFECC007C1E17 /* Products */,
+				1AD18816276C05560085CDA5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,12 +91,11 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
-		1A068AF6276C00A7007C1E17 /* Packages */ = {
+		1AD18816276C05560085CDA5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1AD18815276C046F0085CDA5 /* MyLibrary */,
 			);
-			name = Packages;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +114,10 @@
 			dependencies = (
 			);
 			name = "BenchmarkTrial (iOS)";
+			packageProductDependencies = (
+				1AD18817276C05560085CDA5 /* MyLibrary */,
+				1AD1881C276C089E0085CDA5 /* CollectionsBenchmark */,
+			);
 			productName = "BenchmarkTrial (iOS)";
 			productReference = 1A068ADE276BFECC007C1E17 /* BenchmarkTrial.app */;
 			productType = "com.apple.product-type.application";
@@ -127,6 +135,9 @@
 			dependencies = (
 			);
 			name = "BenchmarkTrial (macOS)";
+			packageProductDependencies = (
+				1AD18819276C055E0085CDA5 /* MyLibrary */,
+			);
 			productName = "BenchmarkTrial (macOS)";
 			productReference = 1A068AE4276BFECC007C1E17 /* BenchmarkTrial.app */;
 			productType = "com.apple.product-type.application";
@@ -158,6 +169,9 @@
 				Base,
 			);
 			mainGroup = 1A068AD1276BFECC007C1E17;
+			packageReferences = (
+				1AD1881B276C089E0085CDA5 /* XCRemoteSwiftPackageReference "swift-collections-benchmark" */,
+			);
 			productRefGroup = 1A068ADF276BFECC007C1E17 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -470,6 +484,33 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1AD1881B276C089E0085CDA5 /* XCRemoteSwiftPackageReference "swift-collections-benchmark" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections-benchmark";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1AD18817276C05560085CDA5 /* MyLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MyLibrary;
+		};
+		1AD18819276C055E0085CDA5 /* MyLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MyLibrary;
+		};
+		1AD1881C276C089E0085CDA5 /* CollectionsBenchmark */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1AD1881B276C089E0085CDA5 /* XCRemoteSwiftPackageReference "swift-collections-benchmark" */;
+			productName = CollectionsBenchmark;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1A068AD2276BFECC007C1E17 /* Project object */;
 }
