@@ -13,6 +13,8 @@
 		1A068AEA276BFECC007C1E17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A068AD8276BFECC007C1E17 /* ContentView.swift */; };
 		1A068AEB276BFECC007C1E17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A068AD9276BFECC007C1E17 /* Assets.xcassets */; };
 		1A068AEC276BFECC007C1E17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A068AD9276BFECC007C1E17 /* Assets.xcassets */; };
+		1A068AF9276C0316007C1E17 /* SampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A068AF8276C0316007C1E17 /* SampleModel.swift */; };
+		1A068AFA276C0316007C1E17 /* SampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A068AF8276C0316007C1E17 /* SampleModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +25,7 @@
 		1A068AE4276BFECC007C1E17 /* BenchmarkTrial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BenchmarkTrial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A068AE6276BFECC007C1E17 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		1A068AF5276BFF4A007C1E17 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		1A068AF7276C00A7007C1E17 /* swift-collections-benchmark */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "swift-collections-benchmark"; path = "../swift-collections-benchmark"; sourceTree = "<group>"; };
+		1A068AF8276C0316007C1E17 /* SampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				1A068AD7276BFECC007C1E17 /* BenchmarkTrialApp.swift */,
+				1A068AF8276C0316007C1E17 /* SampleModel.swift */,
 				1A068AD8276BFECC007C1E17 /* ContentView.swift */,
 				1A068AD9276BFECC007C1E17 /* Assets.xcassets */,
 			);
@@ -85,7 +88,6 @@
 		1A068AF6276C00A7007C1E17 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				1A068AF7276C00A7007C1E17 /* swift-collections-benchmark */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -189,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A068AE9276BFECC007C1E17 /* ContentView.swift in Sources */,
+				1A068AF9276C0316007C1E17 /* SampleModel.swift in Sources */,
 				1A068AE7276BFECC007C1E17 /* BenchmarkTrialApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A068AEA276BFECC007C1E17 /* ContentView.swift in Sources */,
+				1A068AFA276C0316007C1E17 /* SampleModel.swift in Sources */,
 				1A068AE8276BFECC007C1E17 /* BenchmarkTrialApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
