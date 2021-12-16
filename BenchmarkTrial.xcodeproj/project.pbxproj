@@ -23,6 +23,7 @@
 		1A068AE4276BFECC007C1E17 /* BenchmarkTrial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BenchmarkTrial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A068AE6276BFECC007C1E17 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		1A068AF5276BFF4A007C1E17 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1A068AF7276C00A7007C1E17 /* swift-collections-benchmark */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "swift-collections-benchmark"; path = "../swift-collections-benchmark"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +47,7 @@
 		1A068AD1276BFECC007C1E17 = {
 			isa = PBXGroup;
 			children = (
+				1A068AF6276C00A7007C1E17 /* Packages */,
 				1A068AF5276BFF4A007C1E17 /* README.md */,
 				1A068AD6276BFECC007C1E17 /* Shared */,
 				1A068AE5276BFECC007C1E17 /* macOS */,
@@ -78,6 +80,14 @@
 				1A068AE6276BFECC007C1E17 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		1A068AF6276C00A7007C1E17 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				1A068AF7276C00A7007C1E17 /* swift-collections-benchmark */,
+			);
+			name = Packages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
