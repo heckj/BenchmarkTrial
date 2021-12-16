@@ -26,6 +26,7 @@
 		1A068AE6276BFECC007C1E17 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		1A068AF5276BFF4A007C1E17 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1A068AF8276C0316007C1E17 /* SampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleModel.swift; sourceTree = "<group>"; };
+		1AD18815276C046F0085CDA5 /* MyLibrary */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = MyLibrary; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +89,7 @@
 		1A068AF6276C00A7007C1E17 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
+				1AD18815276C046F0085CDA5 /* MyLibrary */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
