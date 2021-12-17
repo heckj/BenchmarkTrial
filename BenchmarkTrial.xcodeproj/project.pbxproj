@@ -15,8 +15,7 @@
 		1A068AEC276BFECC007C1E17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A068AD9276BFECC007C1E17 /* Assets.xcassets */; };
 		1A068AF9276C0316007C1E17 /* SampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A068AF8276C0316007C1E17 /* SampleModel.swift */; };
 		1A068AFA276C0316007C1E17 /* SampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A068AF8276C0316007C1E17 /* SampleModel.swift */; };
-		1AD18818276C05560085CDA5 /* MyLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 1AD18817276C05560085CDA5 /* MyLibrary */; };
-		1AD1881A276C055E0085CDA5 /* MyLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 1AD18819276C055E0085CDA5 /* MyLibrary */; };
+		1A37C883276C0D370024AD31 /* CollectionsBenchmark in Frameworks */ = {isa = PBXBuildFile; productRef = 1A37C882276C0D370024AD31 /* CollectionsBenchmark */; };
 		1AD1881D276C089E0085CDA5 /* CollectionsBenchmark in Frameworks */ = {isa = PBXBuildFile; productRef = 1AD1881C276C089E0085CDA5 /* CollectionsBenchmark */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +36,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AD1881D276C089E0085CDA5 /* CollectionsBenchmark in Frameworks */,
-				1AD18818276C05560085CDA5 /* MyLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AD1881A276C055E0085CDA5 /* MyLibrary in Frameworks */,
+				1A37C883276C0D370024AD31 /* CollectionsBenchmark in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,7 +113,6 @@
 			);
 			name = "BenchmarkTrial (iOS)";
 			packageProductDependencies = (
-				1AD18817276C05560085CDA5 /* MyLibrary */,
 				1AD1881C276C089E0085CDA5 /* CollectionsBenchmark */,
 			);
 			productName = "BenchmarkTrial (iOS)";
@@ -136,7 +133,7 @@
 			);
 			name = "BenchmarkTrial (macOS)";
 			packageProductDependencies = (
-				1AD18819276C055E0085CDA5 /* MyLibrary */,
+				1A37C882276C0D370024AD31 /* CollectionsBenchmark */,
 			);
 			productName = "BenchmarkTrial (macOS)";
 			productReference = 1A068AE4276BFECC007C1E17 /* BenchmarkTrial.app */;
@@ -403,6 +400,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -431,6 +429,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -497,13 +496,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		1AD18817276C05560085CDA5 /* MyLibrary */ = {
+		1A37C882276C0D370024AD31 /* CollectionsBenchmark */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = MyLibrary;
-		};
-		1AD18819276C055E0085CDA5 /* MyLibrary */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = MyLibrary;
+			package = 1AD1881B276C089E0085CDA5 /* XCRemoteSwiftPackageReference "swift-collections-benchmark" */;
+			productName = CollectionsBenchmark;
 		};
 		1AD1881C276C089E0085CDA5 /* CollectionsBenchmark */ = {
 			isa = XCSwiftPackageProductDependency;

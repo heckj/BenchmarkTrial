@@ -11,15 +11,15 @@ import CollectionsBenchmark
 struct Model {
     var benchmark = Benchmark(title: "2D Example Benchmark")
     
-    func addBenchmarks() {
-        benchmark.addSimple(
+    mutating func addBenchmarks() {
+        self.benchmark.addSimple(
             title: "Array<Int> sorted",
             input: [Int].self
         ) { input in
             blackHole(input.sorted())
         }
         
-        benchmark.add(
+        self.benchmark.add(
             title: "Set<Int> contains",
             input: ([Int], [Int]).self
         ) { input, lookups in
